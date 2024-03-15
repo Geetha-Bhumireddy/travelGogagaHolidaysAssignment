@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://img.freepik.com/free-vector/detailed-travel-logo_23-2148616611.jpg?size=338&ext=jpg&ga=GA1.1.735520172.1710374400&semt=ais" class="travel-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active  nav-link-items mr-2" id="navItem1" href="#holiday-package">
+                        Holiday Packages
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link nav-link-items mr-2" href="#book-hotels" id="navItem2">Book Hotel</a>
+                    <a class="nav-link  nav-link-items mr-2" href="#book-flight" id="navItem3">Book Flight</a>
+                    <a class="nav-link  nav-link-items mr-2" href="#package-collection" id="navItem4">Packages Collection</a>
+                    <button class="btn btn-primary text-light">Sign up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner-section-bg-container d-flex justify-content-center flex-column">
+        <div class="text-center">
+            <h1 class="banner-heading mb-3">Plan Your Own Travel</h1>
+            <p class="banner-caption mb-4">Travel and tourism encompass the enjoyment of new destinations.</p>
+            <button class="custom-button" onclick="display('book-now')">Book a Trip</button>
+
+        </div>
+    </div>
+    <div id='holiday-package' class="wcu-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="wcu-section-heading">Holiday Packages</h1>
+                    <p class="wcu-section-description">
+                        Embark on unforgettable adventures with our meticulously curated holiday packages, offering unparalleled experiences at every destination.
+                    </p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://cdn.pixabay.com/photo/2016/10/18/08/13/travel-1749508_640.jpg" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">Maldives</h1>
+                        <p class="wcu-card-description">
+                            Escape to paradise with our Maldives holiday package, where pristine beaches, crystal-clear waters, and luxurious accommodations await. Indulge in ultimate relaxation and adventure amidst breathtaking natural beauty, making memories to last a lifetime.
+                        </p>
+                        <p class='price-para'>Price : $100</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://cdn.pixabay.com/photo/2017/12/16/22/22/bora-bora-3023437_640.jpg" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">Alpine Adventure Expedition</h1>
+                        <p class="wcu-card-description">
+                            Embark on an exhilarating Alpine Adventure Expedition with our exclusive package. Traverse crafting memories of excitement and wonder in the heart of the mountains.You will have fun and make the trip memorable.
+                        </p>
+                        <p class='price-para'>Price : $200</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_1280.jpg" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">Sunset Serenity Retreat</h1>
+                        <p class="wcu-card-description">
+                            Embark on an exhilarating Alpine Adventure Expedition with our exclusive package. Traverse snow-capped peaks, explore charming mountain villages, and indulge in thrilling winter sports, crafting memories of excitement and wonder in the heart of the mountains.
+                        </p>
+                        <p class='price-para'>Price : $300</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="book-hotels" class="explore-menu-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="menu-section-heading">Book Hotels</h1>
+                    <input type="search" placeholder="Search Hotels..." class="p-1 mb-2 mt-1" />
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <div>
+                            <img src="https://img.freepik.com/free-photo/luxury-classic-modern-bedroom-suite-hotel_105762-1787.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1710374400&semt=sph" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Grand Royal Hotels</h1>
+                            <button class='book-now-section-button' onclick="display('book-now')">
+                                Book Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <img src="https://img.freepik.com/premium-photo/empty-luxury-hotel-bedroom-with-sunlight-from-window_800563-3824.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Lakeside Manor</h1>
+                        <button class='book-now-section-button' onclick="display('book-now')">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://img.freepik.com/free-photo/modern-studio-apartment-design-with-bedroom-living-space_1262-12375.jpg?size=626&ext=jpg&ga=GA1.1.523418798.1710460800&semt=ais" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Sunset Beach Resort</h1>
+                        <button class='book-now-section-button' onclick="display('book-now')">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://img.freepik.com/free-photo/luxury-classic-modern-bedroom-suite-hotel_105762-1787.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1710374400&semt=sph" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Paradise Resort & Spa</h1>
+                        <button class='book-now-section-button' onclick="display('book-now')">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://img.freepik.com/free-photo/luxury-bedroom-suite-resort-high-rise-hotel-with-working-table_105762-1783.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Grand Royal Hotels</h1>
+                        <button class='book-now-section-button' onclick="display('book-now')">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://img.freepik.com/free-photo/luxury-classic-modern-bedroom-suite-hotel_105762-1787.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1710374400&semt=sph" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Grand Royal Hotels</h1>
+                        <button class='book-now-section-button' onclick="display('book-now')">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="menu-item-card shadow p-3 mb-3">
+                        <img src="https://img.freepik.com/free-photo/luxury-classic-modern-bedroom-suite-hotel_105762-1787.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1710374400&semt=sph" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Grand Royal Hotels</h1>
+                        <button class='book-now-section-button' onclick="display('book-now')">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow menu-item-card p-3 mb-3">
+                        <img src="https://img.freepik.com/premium-photo/empty-luxury-hotel-bedroom-with-sunlight-from-window_800563-3824.jpg" class="menu-item-image w-100" />
+                        <h1 class="menu-card-title">Lakeside Manor</h1>
+                        <button class='book-now-section-button' onclick="display('book-now')">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="book-now" class="tourism-section pt-5 mt-3 mb-3 ml-5">
+            <div class="favourite-places-bg-container">
+                <h1>Booking Section</h1>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkin">Check-in Date:</label>
+                        <input type="date" id="checkin" name="checkin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkout">Check-out Date:</label>
+                        <input type="date" id="checkout" name="checkout" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="roomtype">Room Type:</label>
+                        <select id="roomtype" name="roomtype" required>
+                            <option value="">Select Room Type</option>
+                            <option value="single">Single</option>
+                            <option value="double">Double</option>
+                            <option value="suite">Suite</option>
+                        </select>
+                    </div>
+                </form>
+                <button class="btn btn-dark" onclick="hideSection('book-now')">Confirm Booking</button>
+            </div>
+        </div>
+    </div>
+    <div id='book-flight' class="delivery-and-payment-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5 order-1 order-md-2">
+                    <div class="text-center">
+                        <img src="data:image/jpeg;base64,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" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 order-2 order-md-1">
+                    <h1 class="delivery-and-payment-section-heading">
+                        Book Flight
+                    </h1>
+                    <input type="search" placeholder="Search Flights..." class="p-1 mb-2 mt-1" />
+                    <p class="delivery-and-payment-section-description">
+                        Discover seamless travel experiences with our intuitive flight booking feature. From selecting your preferred destinations to securing the best deals, our platform offers convenience at every step. Plan your next adventure effortlessly and embark on journeys with ease. Trust us to make your travel dreams take flight
+                    </p>
+                    <button class="custom-button" onclick="display('book-flight-form')">Book Now</button>
+                    <div class="mt-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png" class="payment-card-img" />
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/master-card-img.png" class="payment-card-img" />
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/paypal-card-img.png" class="payment-card-img" />
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="book-flight-form" class="tourism-section ml-4 mb-2">
+        <h1>Flight Booking Section</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="origin">Origin:</label>
+                <input type="text" id="origin" name="origin" required>
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" required>
+            </div>
+            <div class="form-group">
+                <label for="departure">Departure Date:</label>
+                <input type="date" id="departure" name="departure" required>
+            </div>
+            <div class="form-group">
+                <label for="return">Return Date:</label>
+                <input type="date" id="return" name="return">
+            </div>
+            <button class="btn btn-primary text-light" onclick="hideSection('book-flight-form')">Confirm Booking</button>
+        </form>
+    </div>
+    <div id="package-collection" class="package-collection-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="menu-section-heading">Package Collections</h1>
+                    <p class="wcu-section-description">
+                        Explore our curated collection of enticing travel packages, designed to fulfill your wanderlust dreams and create unforgettable adventures.
+                    </p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="shadow menu-item-card wcu-card p-3 mb-3">
+                        <img src="https://cdn.pixabay.com/photo/2016/10/18/08/13/travel-1749508_640.jpg" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">Tropical Paradise Getaway</h1>
+                        <p class="wcu-card-description">
+                            Escape to sun-drenched beaches and turquoise waters with our Tropical Paradise Getaway package. Indulge in luxurious accommodations, exhilarating water sports.
+                        </p>
+                        <p class='price-para'>Price : $100</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="shadow menu-item-card wcu-card p-3 mb-3">
+                        <img src="https://cdn.pixabay.com/photo/2017/12/16/22/22/bora-bora-3023437_640.jpg" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">European Expedition Explorer</h1>
+                        <p class="wcu-card-description">
+                            Embark our European Expedition Explorer package. Immerse yourself in the rich history, culture, creating memories to last a lifetime
+                        </p>
+                        <p class='price-para'>Price : $200</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="shadow menu-item-card wcu-card p-3 mb-3">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_1280.jpg" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">Asian Odyssey Adventure</h1>
+                        <p class="wcu-card-description">
+                            Escape with our Tropical Paradise Getaway package. Indulge in luxurious accommodations, exhilarating water sports,creating memories, and have fun.
+                        </p>
+                        <p class='price-para'>Price : $300</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="shadow menu-item-card wcu-card p-3 mb-3">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_1280.jpg" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">Asian Odyssey Adventure</h1>
+                        <p class="wcu-card-description">
+                            Escape to sun-drenched beaches and turquoise waters with our Tropical Paradise Getaway package. Indulge in luxurious accommodations, exhilarating water sports,creating memories, and have fun.
+                        </p>
+                        <p class='price-para'>Price : $300</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="shadow menu-item-card wcu-card p-3 mb-3">
+                        <img src="https://cdn.pixabay.com/photo/2017/12/16/22/22/bora-bora-3023437_640.jpg" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">European Expedition Explorer</h1>
+                        <p class="wcu-card-description">
+                            Embark on a journey through the heart of Europe with our European Expedition Explorer package. Immerse yourself in the rich history, culture, creating memories to last a lifetime
+                        </p>
+                        <p class='price-para'>Price : $200</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="shadow menu-item-card wcu-card p-3 mb-3">
+                        <img src="https://cdn.pixabay.com/photo/2016/10/18/08/13/travel-1749508_640.jpg" class="wcu-card-image" />
+                        <h1 class="wcu-card-title mt-3">Tropical Paradise Getaway</h1>
+                        <p class="wcu-card-description">
+                            Escape to sun-drenched beaches , places and turquoise waters with our Tropical Paradise Getaway package. Indulge in luxurious accommodations, exhilarating water sports.
+                        </p>
+                        <p class='price-para'>Price : $100</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="thanking-customers-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                    <h1 class="thanking-customers-section-heading">
+                        Thank you for being a valuable customer to us.
+                    </h1>
+                    <p class="thanking-customers-section-description">
+                        We have a surprise gift for you
+                    </p>
+                    <div class="d-md-none">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="thanking-customers-section-img" />
+                    </div>
+                    <div>
+                        <button class="custom-button">Redeem Gift</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 d-none d-md-block">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="thanking-customers-section-img" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="follow-us-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="follow-us-section-heading">Follow Us</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="https://img.freepik.com/free-vector/detailed-travel-logo_23-2148616611.jpg?size=338&ext=jpg&ga=GA1.1.735520172.1710374400&semt=ais" class="travel-logo" />
+                    <h1 class="footer-section-mail-id">travel&tourism@GogogaHolidays.com</h1>
+                    <p class="footer-section-address">
+                        123 Ayur Vigyan Nagar, New Delhi, India.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
